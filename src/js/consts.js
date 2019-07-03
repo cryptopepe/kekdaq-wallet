@@ -14,8 +14,8 @@ var MULTISIG_DUST_SIZE = UNIT * 2;
 var MIN_PRIME_BALANCE = 50000; //in satoshis ... == .0005
 var ASSET_CREATION_FEE_XCP = 0.5; //in normalized XCP
 var MAX_ASSET_DESC_LENGTH = 41; //42, minus a null term character?
-var FEE_FRACTION_REQUIRED_DEFAULT_PCT = .9;   //0.90% of total order
-var FEE_FRACTION_PROVIDED_DEFAULT_PCT = 1;   //1.00% of total order
+var FEE_FRACTION_REQUIRED_DEFAULT_PCT = .9; //0.90% of total order
+var FEE_FRACTION_PROVIDED_DEFAULT_PCT = 1; //1.00% of total order
 var FEE_FRACTION_DEFAULT_FILTER = .95;
 var BTC_ORDER_MIN_AMOUNT = 0.01;
 
@@ -39,73 +39,73 @@ var CHAT_NUM_USERS_ONLINE_REFRESH_EVERY = 1 * 60 * 1000; //refresh online user c
 
 var NUM_BLOCKS_TO_WAIT_FOR_BTCPAY = 10; //number of blocks to wait until the user can make a BTCpay on an order match where they owe BTC
 
-var ALLOW_UNCONFIRMED_INPUTS = false;  // allow use unconfirmed unspents
+var ALLOW_UNCONFIRMED_INPUTS = false; // allow use unconfirmed unspents
 
 var B26_DIGITS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-var ACTION_PENDING_NOTICE = "<b><u>This action will take some time to complete</u></b>, and will appear as a Pending Action until"
-  + " confirmed on the network. <b class='errorColor'>Until that time, the wallet will not reflect the change. Please be patient.</b>";
+var ACTION_PENDING_NOTICE = "<b><u>This action will take some time to complete</u></b>, and will appear as a Pending Action until" +
+    " confirmed on the network. <b class='errorColor'>Until that time, the wallet will not reflect the change. Please be patient.</b>";
 
 var DEFAULT_PREFERENCES = {
-  'num_addresses_used': DEFAULT_NUM_ADDRESSES,
-  'address_aliases': {},
-  'selected_theme': 'ultraLight',
-  'selected_lang': 'en-us',
-  'watch_only_addresses': [],
-  'armory_offline_addresses': [],
-  'auto_btcpay': true, //default to auto BTC payments being enabled
-  'has_accepted_license': true
+    'num_addresses_used': DEFAULT_NUM_ADDRESSES,
+    'address_aliases': {},
+    'selected_theme': 'ultraLight',
+    'selected_lang': 'en-us',
+    'watch_only_addresses': [],
+    'armory_offline_addresses': [],
+    'auto_btcpay': true, //default to auto BTC payments being enabled
+    'has_accepted_license': true
 };
 
 var ENTITY_NAMES = {
-  'burns': 'Burn',
-  'debits': 'Debit',
-  'credits': 'Credit',
-  'sends': 'Send',
-  'orders': 'Order',
-  'order_matches': 'Order Match',
-  'btcpays': 'BTCPay',
-  'issuances': 'Issuance',
-  'broadcasts': 'Broadcast',
-  'dividends': 'Distribution',
-  'cancels': 'Cancel',
-  'callbacks': 'Callback',
-  'order_expirations': 'Order Expired',
-  'order_match_expirations': 'Order Match Exp',
+    'burns': 'Burn',
+    'debits': 'Debit',
+    'credits': 'Credit',
+    'sends': 'Send',
+    'orders': 'Order',
+    'order_matches': 'Order Match',
+    'btcpays': 'BTCPay',
+    'issuances': 'Issuance',
+    'broadcasts': 'Broadcast',
+    'dividends': 'Distribution',
+    'cancels': 'Cancel',
+    'callbacks': 'Callback',
+    'order_expirations': 'Order Expired',
+    'order_match_expirations': 'Order Match Exp',
 };
 
 var ENTITY_ICONS = {
-  'burns': 'fa-fire',
-  'debits': 'fa-minus',
-  'credits': 'fa-plus',
-  'sends': 'fa-share',
-  'orders': 'fa-bar-chart-o',
-  'order_matches': 'fa-exchange',
-  'btcpays': 'fa-btc',
-  'issuances': 'fa-magic',
-  'broadcasts': 'fa-rss',
-  'dividends': 'fa-ticket',
-  'cancels': 'fa-times',
-  'callbacks': 'fa-retweet',
-  'order_expirations': 'fa-clock-o',
-  'order_match_expirations': 'fa-clock-o',
+    'burns': 'fa-fire',
+    'debits': 'fa-minus',
+    'credits': 'fa-plus',
+    'sends': 'fa-share',
+    'orders': 'fa-bar-chart-o',
+    'order_matches': 'fa-exchange',
+    'btcpays': 'fa-btc',
+    'issuances': 'fa-magic',
+    'broadcasts': 'fa-rss',
+    'dividends': 'fa-ticket',
+    'cancels': 'fa-times',
+    'callbacks': 'fa-retweet',
+    'order_expirations': 'fa-clock-o',
+    'order_match_expirations': 'fa-clock-o',
 };
 
 var ENTITY_NOTO_COLORS = {
-  'burns': 'bg-color-yellow',
-  'debits': 'bg-color-red',
-  'credits': 'bg-color-green',
-  'sends': 'bg-color-orangeDark',
-  'orders': 'bg-color-blue',
-  'order_matches': 'bg-color-blueLight',
-  'btcpays': 'bg-color-orange',
-  'issuances': 'bg-color-pinkDark',
-  'broadcasts': 'bg-color-magenta',
-  'dividends': 'bg-color-pink',
-  'cancels': 'bg-color-red',
-  'callbacks': 'bg-color-pink',
-  'order_expirations': 'bg-color-grayDark',
-  'order_match_expirations': 'bg-color-grayDark',
+    'burns': 'bg-color-yellow',
+    'debits': 'bg-color-red',
+    'credits': 'bg-color-green',
+    'sends': 'bg-color-orangeDark',
+    'orders': 'bg-color-blue',
+    'order_matches': 'bg-color-blueLight',
+    'btcpays': 'bg-color-orange',
+    'issuances': 'bg-color-pinkDark',
+    'broadcasts': 'bg-color-magenta',
+    'dividends': 'bg-color-pink',
+    'cancels': 'bg-color-red',
+    'callbacks': 'bg-color-pink',
+    'order_expirations': 'bg-color-grayDark',
+    'order_match_expirations': 'bg-color-grayDark',
 };
 
 var MAINNET_UNSPENDABLE = 'PKekDaqXXXXXXXXXXXXXXXXXXXXXWH8yfH';
@@ -117,10 +117,10 @@ var TESTNET_DONATION = 'mvKekDaqXXXXXXXXXXXXXXXXXXXXaupTK1';
  * IS_DEV / USE_TESTNET
  ***********/
 function qs(key) {
-  //http://stackoverflow.com/a/7732379
-  key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
-  var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
-  return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+    //http://stackoverflow.com/a/7732379
+    key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+    var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
+    return match && decodeURIComponent(match[1].replace(/\+/g, " "));
 }
 
 //Allow the site root to specify "dev" and "testnet" parameters...
@@ -128,23 +128,23 @@ function qs(key) {
 // USE_TESTNET is enabled if the initial (root) URL access has ?testnet=1, OR the hostname visited starts with 'testnet' (e.g. testnet.myhost.com)
 var IS_DEV = (location.pathname == "/" && qs("dev") && qs("dev") != '0' ? true : false);
 var USE_TESTNET = false; //(   (((location.pathname == "/" || location.pathname == "/src/" || location.pathname == "/build/") && qs("testnet") && qs("testnet") != '0')
-               //    || location.hostname.indexOf('testnet') != -1) ? true : false
-              //    );
+//    || location.hostname.indexOf('testnet') != -1) ? true : false
+//    );
 
 var BURN_START, BURN_END, BURN_MULTIPLIER = 50;
 var BURN_SECOND_START, BURN_SECOND_END, BURN_SECOND_MULTIPLIER = 10;
 if (USE_TESTNET) {
-  if (typeof TESTNET_BURN_START !== "undefined") {
-    BURN_START = TESTNET_BURN_START;
-    BURN_END = TESTNET_BURN_END;
-  }
+    if (typeof TESTNET_BURN_START !== "undefined") {
+        BURN_START = TESTNET_BURN_START;
+        BURN_END = TESTNET_BURN_END;
+    }
 } else {
-  if (typeof LIVENET_BURN_START !== "undefined") {
-    BURN_START = LIVENET_BURN_START;
-    BURN_END = LIVENET_BURN_END;
-    BURN_SECOND_START = 1489487;
-    BURN_SECOND_END = 2800000;
-  }
+    if (typeof LIVENET_BURN_START !== "undefined") {
+        BURN_START = LIVENET_BURN_START;
+        BURN_END = LIVENET_BURN_END;
+        BURN_SECOND_START = 1489487;
+        BURN_SECOND_END = 3000000;
+    }
 }
 var BURNABLE = !!BURN_START;
 var UNSPENDABLE = USE_TESTNET ? TESTNET_UNSPENDABLE : MAINNET_UNSPENDABLE;
@@ -153,8 +153,8 @@ var TESTNET_PASSPHRASE = qs("passphrase");
 
 var CRYPTED_PASSPHRASE;
 if (location.hash.indexOf('cp=') == 1) {
-  CRYPTED_PASSPHRASE = location.hash.substr(4);
-  location.hash = '';
+    CRYPTED_PASSPHRASE = location.hash.substr(4);
+    location.hash = '';
 }
 location.hash = '';
 
@@ -181,16 +181,12 @@ var DISABLED_FEATURES = []; //set in counterwallet.js
 
 // restricted action
 var RESTRICTED_AREA = {
-//  these are all completely removed from the code in Kekdaq
-//  'pages/betting.html': ['US'],
-//  'pages/openbets.html': ['US'],
-//  'pages/matchedbets.html': ['US'],
-//  'pages/rps.html': ['US'],
-//  'dividend': ['US']
+    //  these are all completely removed from the code in Kekdaq
+    //  'pages/betting.html': ['US'],
+    //  'pages/openbets.html': ['US'],
+    //  'pages/matchedbets.html': ['US'],
+    //  'pages/rps.html': ['US'],
+    //  'dividend': ['US']
 }
 
 var MAX_SUPPORT_CASE_PROBLEM_LEN = 4096;
-
-
-
-

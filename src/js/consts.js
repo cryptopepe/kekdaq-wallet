@@ -69,9 +69,7 @@ var ENTITY_NAMES = {
     'btcpays': 'BTCPay',
     'issuances': 'Issuance',
     'broadcasts': 'Broadcast',
-    'dividends': 'Distribution',
     'cancels': 'Cancel',
-    'callbacks': 'Callback',
     'order_expirations': 'Order Expired',
     'order_match_expirations': 'Order Match Exp',
 };
@@ -86,9 +84,7 @@ var ENTITY_ICONS = {
     'btcpays': 'fa-btc',
     'issuances': 'fa-magic',
     'broadcasts': 'fa-rss',
-    'dividends': 'fa-ticket',
     'cancels': 'fa-times',
-    'callbacks': 'fa-retweet',
     'order_expirations': 'fa-clock-o',
     'order_match_expirations': 'fa-clock-o',
 };
@@ -103,9 +99,7 @@ var ENTITY_NOTO_COLORS = {
     'btcpays': 'bg-color-orange',
     'issuances': 'bg-color-pinkDark',
     'broadcasts': 'bg-color-magenta',
-    'dividends': 'bg-color-pink',
     'cancels': 'bg-color-red',
-    'callbacks': 'bg-color-pink',
     'order_expirations': 'bg-color-grayDark',
     'order_match_expirations': 'bg-color-grayDark',
 };
